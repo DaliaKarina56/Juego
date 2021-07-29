@@ -1,0 +1,50 @@
+/*Autor Karina*/
+/*Diseño de imagen Jair*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contador{
+    display: flex;
+    align-items: center;
+    flex-basis: 1;
+}
+.simply-section{
+    background-color:transparent; /**/
+    width: 150px;
+    height: 180px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.simply-amount{
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+.simply-word{
+    font-weight: 300;
+    font-size: 30px;
+    color: black;
+}
+@media (min-width:260px) and (max-width:760px) {
+    #contador{
+        flex-direction: column;
+    }
+    .simply-section{
+        margin: -20px !important;
+    }
+    .imagen img{
+        width: 350px !important;
+        margin-bottom: 10px ;
+    }
+    .simply-word{
+        font-size: 20px;
+    }
+    .simply-amount{
+        font-size: 40px;
+    }
+}
